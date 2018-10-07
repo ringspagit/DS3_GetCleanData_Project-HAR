@@ -15,6 +15,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ---
 ### Description
+|Comment|Note|
 |---|---|
 |Usage|**run_analysis()**|
 |Inputs|None|
