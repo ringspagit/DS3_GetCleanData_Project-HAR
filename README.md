@@ -14,8 +14,7 @@ Data set used for this project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 ---
-### Description
-|Info|Notes|
+|Description|Notes|
 |:---|:---|
 |Usage|**run_analysis()**|
 |Inputs|None|
