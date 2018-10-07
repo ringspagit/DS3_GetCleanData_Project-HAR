@@ -24,7 +24,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ### Data Process Steps:
 1. Load reference file *activity_labels.txt* from working directory (enumerates activity names)
 2. Load reference file *features.txt* from working directory (enumerates observation column names)
-3. Identify the mean() and std() cols only for final dataset (66 observations; "Freq" cols excluded)
+3. Identify the mean() and std() cols only for final dataset (66 observations; Freq cols excluded)
 4. Clean up the observation column names - strips punctuation and converts to lowercase
 5. Process each TYPE = {test|train} dataset from TYPE subdirectory, using subfunction **harload(...)**:
 	1. Load *subject_TYPE.txt*  -  Subject ID for the observation set (1-30)
@@ -37,3 +37,42 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 7. Summarize data using aggregate() - calc mean() of each col, by subject id and activity name
 8. Output summary resultset to file *harmean.txt* in working directory
 ---
+### Codebook
+|Column|Name|Min|Max|Description|
+|:---|:---|:---|:---|:---|:---|
+1|subjectid
+2|actname
+3-5|tbodyaccmean{x|y|z}
+6-8|tbodyaccstd{x|y|z}
+9-11|tgravityaccmean{x|y|x}
+12-14|tgravityaccstd{x|y|z}
+15-17|tbodyaccjerkmean{x|y|z}
+18-20|tbodyaccjerkstd{x|y|z}
+21-23|tbodygyromean{z|y|z}
+24-26|tbodygyrostd{x|y|z}
+27-29|tbodygyrojerkmean{x|y|z}
+30-32|tbodygyrojerkstd{x|y|z}
+33|tbodyaccmagmean
+34|tbodyaccmagstd
+35|tgravityaccmagmean
+36|tgravityaccmagstd
+37|tbodyaccjerkmagmean
+38|tbodyaccjerkmagstd
+39|tbodygyromagmean
+40|tbodygyromagstd
+41|tbodygyrojerkmagmean
+42|tbodygyrojerkmagstd
+43-45|fbodyaccmean{x|y|z}
+46-48|fbodyaccstd{x|y|z}
+49-51|fbodyaccjerkmean{x|y|z}
+52-54|fbodyaccjerkstd{x|y|z}
+55-57|fbodygyromean{x|y|z}
+58-60|fbodygyrostd{x|y|z}
+61|fbodyaccmagmean
+62|fbodyaccmagstd
+63|fbodybodyaccjerkmagmean
+64|fbodybodyaccjerkmagstd
+65|fbodybodygyromagmean
+66|fbodybodygyromagstd
+67|fbodybodygyrojerkmagmean
+68|fbodybodygyrojerkmagstd
