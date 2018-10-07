@@ -1,6 +1,6 @@
 # Human Activity Recognition (HAR) Analysis
-## Course 3 Getting and Cleaning Data / Week 4 Project
-## Paul Ringsted, 2018-10-07
+## Course 3 - Getting and Cleaning Data - Week 4 Project
+## Paul Ringsted, 7th October 2018
 ---
 ### Overview
 Loads raw data from the messy UCI HAR dataset, merges into tidy dataset and summarizes
@@ -15,10 +15,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ---
 ### Description
-Usage : 	**run_analysis()**
-Inputs:		None
-Assumptions:	Working directory contains the HAR dataset (test and train are immediate subdirectories)
-Outputs:	Ouputs mean of mean() and std() observations by subject ID and activity to file *harmean.txt*
+- Usage : 	**run_analysis()**
+- Inputs:		None
+- Assumptions:	Working directory contains the HAR dataset (test and train are immediate subdirectories)
+- Outputs:	Ouputs mean of mean() and std() observations by subject ID and activity to file *harmean.txt*
 ---
 Data Process Steps:
 1. Loads the activity reference file *activity_labels.txt* from working directory (enumerates activity names)
