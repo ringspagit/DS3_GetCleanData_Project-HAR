@@ -60,10 +60,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 65-66|fbodybodygyromag{mean,std}|numeric|-1|1
 67-68|fbodybodygyrojerkmag{mean,std}|numeric|-1|1
 
-where <obs>{mean,std}{x,y,z} infers iteration of variables as follows
-1. <obs>meanx
-2. <obs>meany
-3. <obs>meanz
-4. <obs>stdx
-5. <obs>stdy
-6. <obs>stdz
+where OBS{mean,std}{x,y,z} infers iteration of variables as follows
+1. OBSmeanx
+2. OBSmeany
+3. OBSmeanz
+4. OBSstdx
+5. OBSstdy
+6. OBSstdz
