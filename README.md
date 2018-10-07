@@ -22,18 +22,18 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 |Outputs|Mean of mean() and std() observations by subject ID and activity to file *harmean.txt*|
 ---
 ### Data Process Steps:
-1. Loads reference file *activity_labels.txt* from working directory (enumerates activity names)
-2. Loads reference file *features.txt* from working directory (enumerates observation column names)
-3. Identifies the mean() and std() cols only for final dataset (66 observations; "Freq" cols excluded)
-4. Cleans up the observation column names - strips punctuation and converts to lowercase
-5. Processes each TYPE = {test|train} dataset from TYPE subdirectory, using subfunction **harload(...)**:
+1. Load reference file *activity_labels.txt* from working directory (enumerates activity names)
+2. Load reference file *features.txt* from working directory (enumerates observation column names)
+3. Identify the mean() and std() cols only for final dataset (66 observations; "Freq" cols excluded)
+4. Clean up the observation column names - strips punctuation and converts to lowercase
+5. Process each TYPE = {test|train} dataset from TYPE subdirectory, using subfunction **harload(...)**:
 	1. Load *subject_TYPE.txt*  -  Subject ID for the observation set (1-30)
 	2. Load *y_TYPE.txt*  -  Activity labels for the observation set (1-6)
 	3. Load *X_TYPE.txt*  -  Observation set (561 variables per obs)
 	4. Convert activity ID in activity labels (y) data to activity name
 	5. Selects only the mean() and std() observations from the observation (X) data
 	6. Returns data frame with: subject id, activity name, selected observations
-6. Merges the two datasets
-7. Summarizes data using aggregate() - calc mean() of each col, by subject id and activity name
-8. Outputs summary resultset to file *harmean.txt* in working directory
+6. Merge the two datasets
+7. Summarize data using aggregate() - calc mean() of each col, by subject id and activity name
+8. Output summary resultset to file *harmean.txt* in working directory
 ---
