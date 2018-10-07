@@ -38,29 +38,29 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 8. Output summary resultset to file *harmean.txt* in working directory
 ---
 ### Codebook
-|Column|Name[^1]|Type|Min|Max|Values|Description|
+|Column|Name|Type|Min|Max|Values|Description|
 |:---|:---|:---|:---|:---|:---|:---|
-1|subjectid|Int|1|30|1-30|Id of subject of observation|
-2|actname|Char|||WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING|Subject activity during obsersation|
-3-8|tbodyacc{mean,std}{x,y,z}|numeric|
-9-14|tgravityacc{mean,std}{x,y,x}|numeric
-15-20|tbodyaccjerk{mean,std}{x,y,z}|numeric
-21-26|tbodygyro{mean,std}{x,y,z}|numeric
-27-32|tbodygyrojerk{mean,std}{x,y,z}|numeric
-33-34|tbodyaccmag{mean,std}|numeric
-35-36|tgravityaccmag{mean,std}|numeric
-37-38|tbodyaccjerkmag{mean,std}|numeric
-39-40|tbodygyromag{mean,std}|numeric
-41-42|tbodygyrojerkmag{mean,std}|numeric
-43-48|fbodyacc{mean,std}{x,y,z}|numeric
-49-54|fbodyaccjerk{mean,std}{x,y,z}|numeric
-55-60|fbodygyro{mean,std}mean{x,y,z}|numeric
-61-62|fbodyaccmag{mean,std}|numeric
-63-64|fbodybodyaccjerkmag{mean,std}|numeric
-65-66|fbodybodygyromag{mean,std}|numeric
-67-68|fbodybodygyrojerkmag{mean,std}|numeric
+1|subjectid|int|1|30|1-30|Id of subject of observation|
+2|actname|char|||WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING|Subject activity during obsersation|
+3-8|tbodyacc{mean,std}{x,y,z}|numeric|-1|1
+9-14|tgravityacc{mean,std}{x,y,x}|numeric|-1|1
+15-20|tbodyaccjerk{mean,std}{x,y,z}|numeric|-1|1
+21-26|tbodygyro{mean,std}{x,y,z}|numeric|-1|1
+27-32|tbodygyrojerk{mean,std}{x,y,z}|numeric|-1|1
+33-34|tbodyaccmag{mean,std}|numeric|-1|1
+35-36|tgravityaccmag{mean,std}|numeric|-1|1
+37-38|tbodyaccjerkmag{mean,std}|numeric|-1|1
+39-40|tbodygyromag{mean,std}|numeric|-1|1
+41-42|tbodygyrojerkmag{mean,std}|numeric|-1|1
+43-48|fbodyacc{mean,std}{x,y,z}|numeric|-1|1
+49-54|fbodyaccjerk{mean,std}{x,y,z}|numeric|-1|1
+55-60|fbodygyro{mean,std}mean{x,y,z}|numeric|-1|1
+61-62|fbodyaccmag{mean,std}|numeric|-1|1
+63-64|fbodybodyaccjerkmag{mean,std}|numeric|-1|1
+65-66|fbodybodygyromag{mean,std}|numeric|-1|1
+67-68|fbodybodygyrojerkmag{mean,std}|numeric|-1|1
 
-[^1]where <obs>{mean,std}{x,y,z} infers iteration of variables as follows
+where <obs>{mean,std}{x,y,z} infers iteration of variables as follows
 1. <obs>meanx
 2. <obs>meany
 3. <obs>meanz
