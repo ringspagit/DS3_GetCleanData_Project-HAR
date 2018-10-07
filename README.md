@@ -26,10 +26,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 2. Loads reference file *features.txt* from working directory (enumerates observation column names)
 3. Identifies the mean() and std() cols only for final dataset (66 observations; "Freq" cols excluded)
 4. Cleans up the observation column names - strips punctuation and converts to lowercase
-5. Processes each <type> = {test|train} dataset from <type> subdirectory, using subfunction **harload(...)**:
-- Load *subject_<type>.txt*	Subject ID for the observation set (1-30)
-- Load *y_<type>.txt*		Activity labels for the observation set (1-6)
-- Load *X_<type>.txt*		Observation set (561 variables per obs)
+5. Processes each TYPE = {test|train} dataset from TYPE subdirectory, using subfunction **harload(...)**:
+- Load *subject_TYPE.txt*	Subject ID for the observation set (1-30)
+- Load *y_TYPE.txt*		Activity labels for the observation set (1-6)
+- Load *X_TYPE.txt*		Observation set (561 variables per obs)
 - Converts activity ID in activity labels (y) data to activity name
 - Selects only the mean() and std() observations from the observation (X) data
 - Returns data frame with: subject id, activity name, selected observations
