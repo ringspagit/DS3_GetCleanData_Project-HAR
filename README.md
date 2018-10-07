@@ -15,14 +15,14 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ---
 ### Description
-|Comment|Note|
-|---|---|
+||Note|
+|:---|:---|
 |Usage|**run_analysis()**|
 |Inputs|None|
 |Assumptions|Working directory contains the HAR dataset (test and train are immediate subdirectories)|
 |Outputs|Ouputs mean of mean() and std() observations by subject ID and activity to file *harmean.txt*|
 ---
-Data Process Steps:
+### Data Process Steps:
 1. Loads the activity reference file *activity_labels.txt* from working directory (enumerates activity names)
 2. Loads features reference file *features.txt* from working directory (enumerates observation column names)
 2. identifies the mean() and std() cols only for final dataset (66 observations)
