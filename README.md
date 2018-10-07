@@ -15,6 +15,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ---
 ### Description
+|---|---|
 |Usage|**run_analysis()**|
 |Inputs|None|
 |Assumptions|Working directory contains the HAR dataset (test and train are immediate subdirectories)|
