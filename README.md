@@ -39,7 +39,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ---
 ### Codebook
 |Column|Name|Min|Max|Description|
-|:---|:---|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|
 1|subjectid
 2|actname
 3-5|tbodyaccmean{x|y|z}
