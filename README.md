@@ -41,7 +41,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 |Column|Name|Min|Max|Values|Description|
 |:---|:---|:---|:---|:---|:---|
 1|subjectid|1|30|1-30|Id of subject of observation|
-2|actname|||1. WALKING 2.WALKING_UPSTAIRS 3.WALKING_DOWNSTAIRS 4.SITTING 5.STANDING 6.LAYING|Subject activity during obsersation|
+2|actname|||WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING|Subject activity during obsersation|
 3-5|tbodyaccmean{x,y,z}
 6-8|tbodyaccstd{x,y,z}
 9-11|tgravityaccmean{x,y,x}
