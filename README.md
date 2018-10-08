@@ -42,7 +42,8 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 |:---|:---|:---|:---|:---|:---|:---|
 1|subjectid|int|1|30||Id of subject for observation|
 2|actname|char|||WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING|Activity for observation|
----
+|Column|Name|Type|Min|Max|Values|Description|
+|:---|:---|:---|:---|:---|:---|:---|
 3-8|tbodyacc{mean,std}{x,y,z}|numeric|-1|1||Body Acceleration in 3D|
 9-14|tgravityacc{mean,std}{x,y,x}|numeric|-1|1||Gravity Acceleration in 3D|
 15-20|tbodyaccjerk{mean,std}{x,y,z}|numeric|-1|1||Body Linear Acceleration in 3D|
