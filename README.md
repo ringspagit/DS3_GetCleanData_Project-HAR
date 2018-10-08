@@ -2,12 +2,12 @@
 ## Course 3 - Getting and Cleaning Data - Week 4 Project
 ## Paul Ringsted, 7th October 2018
 ---
-### Overview
-Loads raw data from the messy UCI HAR dataset, merges into tidy dataset and summarizes
+### Overview and Study Design
+Loads raw data from the messy UCI HAR dataset, merges into tidy dataset and generates summarized output.
 
 The data used in this project represents data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
-A full description is available at the site where the data was obtained:
+A full description of the study is available at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 Data set used for this project:
@@ -18,7 +18,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 |Item|Notes|
 |:---|:---|
 |Usage|**run_analysis()**|
-|Inputs|HAR dataset in current working directory (test and train are immediate subdirectories)|
+|Inputs|HAR dataset in current working directory (*test* and *train* are immediate subdirectories)|
 |Outputs|Mean of mean() and std() observations by subject ID and activity to file *harmean.txt*|
 ---
 ### Data Process Steps:
@@ -66,12 +66,12 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 **Notes**
 1. Where OBS{mean,std}{x,y,z} infers iteration of variables named as follows
-	1. OBSmeanx
-	2. OBSmeany
-	3. OBSmeanz
-	4. OBSstdx
-	5. OBSstdy
-	6. OBSstdz
+	1. OBSmeanx (mean in X direction)
+	2. OBSmeany (mean in Y direction)
+	3. OBSmeanz (mean in Z direction)
+	4. OBSstdx (standard deviation in X direction)
+	5. OBSstdy (standard deviation in Y direction)
+	6. OBSstdz (standard deviation in Z direction)
 
 2. FFT = Fast Fourier Transform (Frequency Domain)
 3. For more information on the observation variables, see notes in the HAR dataset (*features_info.txt*)
