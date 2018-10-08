@@ -48,17 +48,17 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 15-20|tbodyaccjerk{mean,std}{x,y,z}|numeric|-1|1||Body Linear Acceleration in 3D|
 21-26|tbodygyro{mean,std}{x,y,z}|numeric|-1|1||Body Gyroscope in 3D|
 27-32|tbodygyrojerk{mean,std}{x,y,z}|numeric|-1|1||Body Angular Velocity in 3D|
----
+||
 33-34|tbodyaccmag{mean,std}|numeric|-1|1||Body Acceleration Magnitude|
 35-36|tgravityaccmag{mean,std}|numeric|-1|1||Gravity Acceleration Magnitude|
 37-38|tbodyaccjerkmag{mean,std}|numeric|-1|1||Body Linear Acceleration Magnitude|
 39-40|tbodygyromag{mean,std}|numeric|-1|1||Body Gyroscope Magnitude|
 41-42|tbodygyrojerkmag{mean,std}|numeric|-1|1||Body Angular Velocity Magnitude|
----
+||
 43-48|fbodyacc{mean,std}{x,y,z}|numeric|-1|1||Body Acceleration in 3D FFT|
 49-54|fbodyaccjerk{mean,std}{x,y,z}|numeric|-1|1||Body Linear Acceleration in 3D FFT|
 55-60|fbodygyro{mean,std}mean{x,y,z}|numeric|-1|1||Gyroscope in 3D FFT|
----
+||
 61-62|fbodyaccmag{mean,std}|numeric|-1|1||Body Acceleration Magnitude FFT|
 63-64|fbodybodyaccjerkmag{mean,std}|numeric|-1|1||Body Linear Acceleration Magnitude FFT|
 65-66|fbodybodygyromag{mean,std}|numeric|-1|1||Body Gyroscope Magnitude FFT|
