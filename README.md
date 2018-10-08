@@ -64,12 +64,14 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 65-66|fbodybodygyromag{mean,std}|numeric|-1|1||Body Gyroscope Magnitude FFT|
 67-68|fbodybodygyrojerkmag{mean,std}|numeric|-1|1||Body Angular Velocity FFT|
 
-where OBS{mean,std}{x,y,z} infers iteration of variables as follows
-1. OBSmeanx
-2. OBSmeany
-3. OBSmeanz
-4. OBSstdx
-5. OBSstdy
-6. OBSstdz
+**Notes**
+1.where OBS{mean,std}{x,y,z} infers iteration of variables as follows
+	1. OBSmeanx
+	2. OBSmeany
+	3. OBSmeanz
+	4. OBSstdx
+	5. OBSstdy
+	6. OBSstdz
 
-for more information on the observation variables, see notes in the HAR dataset (*features_info.txt*)
+2.FFT = Fast Fourier Transform (Frequency Domain)
+3.For more information on the observation variables, see notes in the HAR dataset (*features_info.txt*)
