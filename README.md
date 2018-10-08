@@ -65,7 +65,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 67-68|fbodybodygyrojerkmag{mean,std}|numeric|-1|1||Body Angular Velocity FFT|
 
 **Notes**
-1. Where OBS{mean,std}{x,y,z} infers iteration of variables as follows
+1. Where OBS{mean,std}{x,y,z} infers iteration of variables named as follows
 	1. OBSmeanx
 	2. OBSmeany
 	3. OBSmeanz
