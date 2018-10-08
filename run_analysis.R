@@ -1,15 +1,15 @@
 #############################################################################################
-## File		: run_analysis.R
-## Project	: Human Activity Recoginition - Data Tidyup
-## Coursera	: Course 3 Getting and Cleaning Data / Week 4 Project
-## Author	: Paul Ringsted
-## Date		: 2018-10-07
-## Description	: Loads raw data from HAR dataset, merges into tidy dataset and summarizes
+## File         : run_analysis.R
+## Project      : Human Activity Recoginition - Data Tidyup
+## Coursera     : Course 3 Getting and Cleaning Data / Week 4 Project
+## Author       : Paul Ringsted
+## Date         : 2018-10-07
+## Description  : Loads raw data from HAR dataset, merges into tidy dataset and summarizes
 #############################################################################################
 
 #############################################################################################
-## Function	: har_load(type)
-## Description 	: Takes a dataset type of 'test' or 'train', mapping of activities,
+## Function     : har_load(type)
+## Description  : Takes a dataset type of 'test' or 'train', mapping of activities,
 ##		    observation variable names, and logical list of observations to return
 ##		  Loads data files associated with this test type from subdirectory
 ##		    subject_<type>.txt		Subject ID for the observation set (1-30)
@@ -64,8 +64,8 @@ har_load <- function(type,act_labels,obs_labels,obs_cols) {
 
 
 #############################################################################################
-## Function	: run_analysis()
-## Description 	: Process the HAR data into tidy, summarized form
+## Function     : run_analysis()
+## Description  : Process the HAR data into tidy, summarized form
 ##		  1. Loads the reference files for the HAR dataset from working directory
 ##		  2. Cleans up the observation variable names and selects mean and std cols
 ##		  3. Processes the test & train data for these cols
