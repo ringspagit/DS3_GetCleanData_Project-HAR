@@ -40,25 +40,29 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ### Codebook
 |Column|Name|Type|Min|Max|Values|Description|
 |:---|:---|:---|:---|:---|:---|:---|
-1|subjectid|int|1|30|1-30|Id of subject of observation|
-2|actname|char|||WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING|Subject activity during obsersation|
-3-8|tbodyacc{mean,std}{x,y,z}|numeric|-1|1
-9-14|tgravityacc{mean,std}{x,y,x}|numeric|-1|1
-15-20|tbodyaccjerk{mean,std}{x,y,z}|numeric|-1|1
-21-26|tbodygyro{mean,std}{x,y,z}|numeric|-1|1
-27-32|tbodygyrojerk{mean,std}{x,y,z}|numeric|-1|1
-33-34|tbodyaccmag{mean,std}|numeric|-1|1
-35-36|tgravityaccmag{mean,std}|numeric|-1|1
-37-38|tbodyaccjerkmag{mean,std}|numeric|-1|1
-39-40|tbodygyromag{mean,std}|numeric|-1|1
-41-42|tbodygyrojerkmag{mean,std}|numeric|-1|1
-43-48|fbodyacc{mean,std}{x,y,z}|numeric|-1|1
-49-54|fbodyaccjerk{mean,std}{x,y,z}|numeric|-1|1
-55-60|fbodygyro{mean,std}mean{x,y,z}|numeric|-1|1
-61-62|fbodyaccmag{mean,std}|numeric|-1|1
-63-64|fbodybodyaccjerkmag{mean,std}|numeric|-1|1
-65-66|fbodybodygyromag{mean,std}|numeric|-1|1
-67-68|fbodybodygyrojerkmag{mean,std}|numeric|-1|1
+1|subjectid|int|1|30||Id of subject for observation|
+2|actname|char|||WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING|Activity for observation|
+---
+3-8|tbodyacc{mean,std}{x,y,z}|numeric|-1|1||Body Acceleration in 3D|
+9-14|tgravityacc{mean,std}{x,y,x}|numeric|-1|1||Gravity Acceleration in 3D|
+15-20|tbodyaccjerk{mean,std}{x,y,z}|numeric|-1|1||Body Linear Acceleration in 3D|
+21-26|tbodygyro{mean,std}{x,y,z}|numeric|-1|1||Body Gyroscope in 3D|
+27-32|tbodygyrojerk{mean,std}{x,y,z}|numeric|-1|1||Body Angular Velocity in 3D|
+---
+33-34|tbodyaccmag{mean,std}|numeric|-1|1||Body Acceleration Magnitude|
+35-36|tgravityaccmag{mean,std}|numeric|-1|1||Gravity Acceleration Magnitude|
+37-38|tbodyaccjerkmag{mean,std}|numeric|-1|1||Body Linear Acceleration Magnitude|
+39-40|tbodygyromag{mean,std}|numeric|-1|1||Body Gyroscope Magnitude|
+41-42|tbodygyrojerkmag{mean,std}|numeric|-1|1||Body Angular Velocity Magnitude|
+---
+43-48|fbodyacc{mean,std}{x,y,z}|numeric|-1|1||Body Acceleration in 3D FFT|
+49-54|fbodyaccjerk{mean,std}{x,y,z}|numeric|-1|1||Body Linear Acceleration in 3D FFT|
+55-60|fbodygyro{mean,std}mean{x,y,z}|numeric|-1|1||Gyroscope in 3D FFT|
+---
+61-62|fbodyaccmag{mean,std}|numeric|-1|1||Body Acceleration Magnitude FFT|
+63-64|fbodybodyaccjerkmag{mean,std}|numeric|-1|1||Body Linear Acceleration Magnitude FFT|
+65-66|fbodybodygyromag{mean,std}|numeric|-1|1||Body Gyroscope Magnitude FFT|
+67-68|fbodybodygyrojerkmag{mean,std}|numeric|-1|1||Body Angular Velocity FFT|
 
 where OBS{mean,std}{x,y,z} infers iteration of variables as follows
 1. OBSmeanx
@@ -67,3 +71,5 @@ where OBS{mean,std}{x,y,z} infers iteration of variables as follows
 4. OBSstdx
 5. OBSstdy
 6. OBSstdz
+
+for more information on the observation variables, see notes in the HAR dataset (*features_info.txt*)
